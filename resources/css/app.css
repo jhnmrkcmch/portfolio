@@ -16,13 +16,8 @@
 
 /* Navbar Pages */
 @import './navbar/education.css';
-@import './navbar/events.css';
-@import './navbar/give.css';
 @import './navbar/home.css';
 @import './navbar/media.css';
-@import './navbar/ministries.css';
-@import './navbar/newhere.css';
-@import './navbar/prayer.css';
 @import './navbar/socialmedia.css';
 
 /* About Pages */
@@ -34,31 +29,12 @@
 @import './about/pastors.css';
 @import './about/team.css';
 
-/* Ministries Pages */
-@import './ministries/children.css';
-@import './ministries/mensministry.css';
-@import './ministries/smallgroups.css';
-@import './ministries/viewall.css';
-@import './ministries/womensministry.css';
-@import './ministries/youngadults.css';
-@import './ministries/youth.css';
-
-/* New Here Pages */
-@import './newhere/becomeamember.css';
-@import './newhere/planavisit.css';
-@import './newhere/culture.css';
 
 /* Education */
 @import './education/littlewonders.css';
 @import './education/saltlight.css';
 @import './education/schoolofministry.css';
 
-/* Media */
-@import './Media/watchlive.css';
-@import './Media/prevmessages.css';
-@import './Media/sermonblogs.css';
-@import './Media/audiopodcast.css';
-@import './Media/media.css';
 
 /* Auth */
 @import './auth/login.css';

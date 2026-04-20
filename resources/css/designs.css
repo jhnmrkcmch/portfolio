@@ -66,8 +66,9 @@
     background-color: #f5f5f5;
 }
 .image-arch {
-    width: 420px;
+    width: 400px;
     max-width: 100%;
+    height: 600px;
     overflow: hidden;
     border-top-left-radius: 220px;
     border-top-right-radius: 220px;
@@ -150,4 +151,58 @@
 .yt-video-section-dark {
     padding: 100px 0;
     background-color: #333;
+}
+
+
+/* slide button */
+.buy-link {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+/* underline */
+.buy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #000;
+
+    /* animation setup */
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+.buy-link-white::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #ffffff;
+
+    /* animation setup */
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+/* hover: slide OUT to the right */
+.buy-link:hover::after, .buy-link-white:hover::after {
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.buy-link-white {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
 }

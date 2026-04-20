@@ -48,33 +48,3 @@
 }
 
 
-.buy-link {
-    position: relative;
-    display: inline-block;
-    color: #000;
-    text-decoration: none;
-    padding-bottom: 5px;
-    font-size: 1.2rem;
-}
-
-/* underline */
-.buy-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background: #000;
-
-    /* animation setup */
-    transform-origin: left;
-    transform: scaleX(1);
-    transition: transform 0.3s ease;
-}
-
-/* hover: slide OUT to the right */
-.buy-link:hover::after {
-    transform-origin: right;
-    transform: scaleX(0);
-}

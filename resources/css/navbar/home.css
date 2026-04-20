@@ -24,6 +24,38 @@
     margin-top: 1rem;
     text-align: center;
 }
+
+
+.main-card {
+    background: #fcfcfc;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 1100px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid #f1f1f1;
+}
+.nav-link {
+  color: #555 !important;
+  font-weight: 500;
+}
+.btn-custom {
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+.service-icon {
+  font-size: 30px;
+  color: #4e73df;
+}
+
+
 #myCarousel .carousel-item {
     height: 600px;
 
@@ -135,9 +167,9 @@
 
 .cta-section {
     position: relative;
-    min-height: 70vh;
+    min-height: 50vh;
     background-image:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
         url('../../public/images/cta-bg.jpg');
     background-size: cover;
     background-position: center center;
