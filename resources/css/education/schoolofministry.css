@@ -1,0 +1,12 @@
+.ministry-section {
+    min-height: 100vh;
+    background: #1f1f1f;
+}
+
+.ministry-section h1 {
+    letter-spacing: 1px;
+}
+
+.ministry-section blockquote {
+    color: #ffffff;
+}

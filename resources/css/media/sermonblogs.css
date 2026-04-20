@@ -1,0 +1,46 @@
+.book-feature-section-dark {
+    background-color: #111;
+}
+
+.custom-container {
+    max-width: 1200px; /* match your card section width */
+    margin: 0 auto; /* center the container */
+}
+
+.custom-gap {
+    row-gap: 1rem;
+    column-gap: 0rem;
+}
+
+.custom-row {
+    margin: 0 2rem; 
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 3rem;
+    align-items: stretch;
+}
+
+
+.custom-item {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+/* Tablet: 2 per row */
+@media (min-width: 768px) {
+    .custom-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Desktop: 3 per row */
+@media (min-width: 1200px) {
+    .custom-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
+    .custom-row {
+        margin: 0 5rem; /* optional larger margin on big screens */
+    }
+}

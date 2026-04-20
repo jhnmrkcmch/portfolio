@@ -1,0 +1,24 @@
+.what-to-expect {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.what-to-expect p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+.join-hero {
+    min-height: 100vh;
+    background: url('../../../public/images/youth-img-1.jpg') center / cover no-repeat;
+    position: relative;
+}
+
+.join-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.join-hero h1 {
+    line-height: 1;
+}

@@ -1,0 +1,6 @@
+/* Optional: tighter spacing on mobile */
+@media (max-width: 768px) {
+  .housefires-section {
+    padding: 60px 20px;
+  }
+}
