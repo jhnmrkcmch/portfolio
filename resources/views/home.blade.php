@@ -17,18 +17,18 @@
         <!-- Hero Section -->
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
-                <img src="{{ asset('images/profileimage.jpg') }}" class="profile-img" alt="Profile">
+                <img src="{{ asset('images/output-image.jpg') }}" class="profile-img" alt="Profile">
             </div>
 
             <div class="col-md-8">
-                <p class="text-muted mb-1">Aspiring Web Developer</p>
+                <p class="text-muted mb-1">Web Developer (Laravel)</p>
                 <h1 class="fw-bold">John Mark Camacho</h1>
                 <p class="text-muted">
-                    I focus on building responsive, user-friendly, and scalable web applications.
+                    Specializing in Laravel-based systems, admin dashboards, and content management solutions.
                 </p>
 
                 <a href="{{ asset('johnmarkcamacho.pdf') }}" download><button class="btn btn-primary btn-custom me-2">Download CV</button></a>
-                <button class="btn btn-outline-secondary btn-custom">Contact</button>
+                <button class="btn btn-outline-secondary btn-custom">View My Work</button>
             </div>
         </div>
 
@@ -109,7 +109,7 @@
 <section class="visit">
     <div class="visit-grid" data-aos="fade-up" data-aos-duration="2000">
         <div class="image-wrapper mx-auto">
-          <img src="{{ asset('images/lbst.webp') }}" class="img-fluid community-image" style="height: 480px; width: 320px;"/>
+          <img src="{{ asset('images/profileimage.jpg') }}" class="img-fluid community-image" style="height: 480px; width: 320px;"/>
         </div>
 
         <div class="visit-content">
@@ -118,7 +118,7 @@
           <h2>Let’s Build Something Together</h2>
 
           <p>
-            I develop CMS-based web applications using Laravel, Bootstrap, and modern web technologies.
+            I build Laravel-based admin systems and CMS-driven websites that are scalable, secure, and easy to manage.
           </p>
 
           <p>
@@ -133,7 +133,7 @@
 <!-- CTA -->
 <section class="cta-section d-flex align-items-center text-center text-white">
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="fw-bold mb-4">Innovating the Future Together.</h2>
+        <h2 class="fw-bold mb-4">Projects preview.</h2>
         <a href="#" class="btn btn-dark rounded-0 px-4 py-1 fw-semibold">
             Contact
         </a>
@@ -149,7 +149,7 @@
             My focus is on building secure backend systems, structured databases, and responsive frontend interfaces.
         </p>
 
-        <a href="#" class="btn btn-dark px-4 py-2">
+        <a href="{{ route('about.about') }}" class="btn btn-dark px-4 py-2">
             Read More About Me
         </a>
     </div>
@@ -158,15 +158,16 @@
 <!-- Livestream -->
 <section class="livestream-section py-5">
     <div class="container" data-aos="fade-up" data-aos-duration="2000">
-        <h2 class="text-white fw-light mb-3">Livestream</h2>
-
-        <p class="text-secondary mb-4">
-            Sundays 9:00 am & 11:00 am & The First<br>
-            Wednesday of the Month at 7:00 pm
-        </p>
-
+        <h2 class="text-white fw-light mb-3">Custom Web Development</h2>
+        <p class="text-secondary"><i>Modern, scalable, and built for real users. </i></p>
+        <ul>
+            <li class="text-secondary">Laravel-powered systems</li>
+            <li class="text-secondary">Fully responsive across all devices</li>
+            <li class="text-secondary">Flexible UI/UX (your design or mine)</li>
+            <li class="text-secondary">CMS-enabled for full control</li>
+        </ul>
         <a href="#" class="btn btn-light px-4 py-2">
-            Watch Live
+            GitHub
         </a>
     </div>
 </section>

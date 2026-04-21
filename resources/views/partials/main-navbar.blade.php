@@ -32,7 +32,21 @@
 
                     <ul class="dropdown-menu" >
                         <li><a class="dropdown-item" href="{{ route('about.about') }}">About Me</a></li>
-                        <li><a class="dropdown-item" href="{{ route('about.location') }}">Projects</a></li>
+                        <li><a class="dropdown-item" href="#skills">Skills / What I Do</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                       href=""
+                       role="button">
+                        Projects
+                    </a>
+
+                    <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item" href="">Laravel systems</a></li>
+                        <li><a class="dropdown-item" href="{{ route('about.location') }}">CMS projects</a></li>
+                        <li><a class="dropdown-item" href="{{ route('about.location') }}">Admin dashboards</a></li>
+                        <li><a class="dropdown-item" href="{{ route('about.location') }}">Demo links / screenshots</a></li>
                     </ul>
                 </li>
 <!-- Education -->
@@ -54,19 +68,14 @@
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                        href="{{ route('socialmedia') }}"
                        role="button">
-                        Platforms
+                        Contact
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://www.facebook.com/LCCAlabang" target="_blank">Facebook</a></li>
-                        <li><a class="dropdown-item" href="https://www.instagram.com/lccalabang/?hl=en" target="_blank">Gmail</a></li>
                         <li><a class="dropdown-item" href="https://www.youtube.com/c/LighthouseChristianCommunity" target="_blank">Linked In</a></li>
                         <li><a class="dropdown-item" href="https://www.tiktok.com/@lighthouseyyc" target="_blank">GitHub</a></li>
                 </li>
             </ul>
         </div>
-        <a class="navbar-brand btn btn-light" href="{{ route('login') }}">
-            Contact
-        </a>
     </div>
 </nav>
