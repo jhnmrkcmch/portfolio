@@ -15,7 +15,7 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
 
     <div class="content position-relative" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-white fw-semibold display-4">
-            Media
+            Projects
         </h1>
     </div>
 </section>
@@ -35,12 +35,12 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
                 <a href="/post/its-always-been-his-call"
                 class="text-decoration-none text-dark d-block h-100">
                     <div class="h-100">
-                        <img src="{{ asset('images/media-img-1.jpg') }}" class="img-fluid rounded mb-3" alt="It's Always been His Call">
+                        <img src="{{ asset('images/projects-lcc.png') }}" class="img-fluid rounded mb-3" alt="It's Always been His Call">
 
                         <h5 class="fw-normal">Lighthouse Christian Community</h5>
                         <p class="small text-muted">
-                            The true meaning of calling in the Christian faith is often misunderstood and deserves
-                            careful exploration. Many mistakenly believe that…
+                            A responsive website for a local church featuring event management, 
+                                media content, and community engagement tools.
                         </p>
                     </div>
                 </a>
@@ -51,12 +51,12 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
                 <a href="/post/its-always-been-his-call"
                 class="text-decoration-none text-dark d-block h-100">
                     <div class="h-100">
-                        <img src="{{ asset('images/media-img-2.jpg') }}" class="img-fluid rounded mb-3" alt="The Purpose of Favor">
+                        <img src="{{ asset('images/projects-mobo.png') }}" class="img-fluid rounded mb-3" alt="The Purpose of Favor">
     
                         <h5 class="fw-normal">MOBOPH</h5>
                         <p class="small text-muted">
-                            In our journey of faith, recognizing and understanding the “Favor of the Lord” is
-                            crucial for living not only a fulfilling life…
+                            An IT services website showcasing solutions for businesses, including 
+                            service offerings, client engagement features, and a modern UI.
                         </p>
                     </div>
                 </a>
@@ -71,8 +71,8 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
 
                         <h5 class="fw-normal">Portfolio</h5>
                         <p class="small text-muted">
-                            In the journey of faith, understanding the “Favor of the Lord” is essential to living
-                            a fulfilling life. This blog explores the…
+                            A modern developer portfolio built to showcase my work, technical 
+                            skills, and creative approach to building web applications.
                         </p>
                     </div>
                 </a>

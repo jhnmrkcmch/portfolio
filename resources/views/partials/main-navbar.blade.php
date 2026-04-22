@@ -46,7 +46,7 @@
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                        href="{{ route('education.saltlight') }}"
                        role="button">
-                        Education
+                        Background
                     </a>
 
                     <ul class="dropdown-menu">
