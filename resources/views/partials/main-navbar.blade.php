@@ -35,19 +35,11 @@
                         <li><a class="dropdown-item" href="#skills">Skills / What I Do</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                       href=""
-                       role="button">
+                <li class="nav-item">
+                    <a href="{{ route('media.media') }}"
+                        class="nav-link {{ request()->routeIs('media*') ? 'active' : '' }}">
                         Projects
-                    </a>
-
-                    <ul class="dropdown-menu" >
-                        <li><a class="dropdown-item" href="">Laravel systems</a></li>
-                        <li><a class="dropdown-item" href="{{ route('about.location') }}">CMS projects</a></li>
-                        <li><a class="dropdown-item" href="{{ route('about.location') }}">Admin dashboards</a></li>
-                        <li><a class="dropdown-item" href="{{ route('about.location') }}">Demo links / screenshots</a></li>
-                    </ul>
+                    </a>                  
                 </li>
 <!-- Education -->
                 <li class="nav-item dropdown {{ request()->routeIs('education*') ? 'active' : '' }}">

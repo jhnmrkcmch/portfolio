@@ -10,7 +10,7 @@
 
 @section('content')
 <section class="landing-page d-flex align-items-center justify-content-center text-center"
-style="background-image: url('{{ asset('images/youngadults-bg.jpg') }}');">
+style="background-image: url('{{ asset('images/projects-bg.png') }}');">
     <div class="overlay"></div>
 
     <div class="content position-relative" data-aos="fade-up" data-aos-duration="2000">
@@ -25,7 +25,7 @@ style="background-image: url('{{ asset('images/youngadults-bg.jpg') }}');">
     <div class="container">
 
         <!-- Section Title -->
-        <h2 class="text-center fw-light mb-5">Read</h2>
+        <h2 class="text-center fw-light mb-5">Projects</h2>
 
         <!-- Cards -->
         <div class="row g-4 justify-content-center">
@@ -37,7 +37,7 @@ style="background-image: url('{{ asset('images/youngadults-bg.jpg') }}');">
                     <div class="h-100">
                         <img src="{{ asset('images/media-img-1.jpg') }}" class="img-fluid rounded mb-3" alt="It's Always been His Call">
 
-                        <h5 class="fw-normal">It’s Always been His Call</h5>
+                        <h5 class="fw-normal">Lighthouse Christian Community</h5>
                         <p class="small text-muted">
                             The true meaning of calling in the Christian faith is often misunderstood and deserves
                             careful exploration. Many mistakenly believe that…
@@ -53,7 +53,7 @@ style="background-image: url('{{ asset('images/youngadults-bg.jpg') }}');">
                     <div class="h-100">
                         <img src="{{ asset('images/media-img-2.jpg') }}" class="img-fluid rounded mb-3" alt="The Purpose of Favor">
     
-                        <h5 class="fw-normal">The Purpose of Favor</h5>
+                        <h5 class="fw-normal">MOBOPH</h5>
                         <p class="small text-muted">
                             In our journey of faith, recognizing and understanding the “Favor of the Lord” is
                             crucial for living not only a fulfilling life…
@@ -64,12 +64,12 @@ style="background-image: url('{{ asset('images/youngadults-bg.jpg') }}');">
 
             <!-- Card 3 -->
             <div class="col-md-6 col-lg-4">
-                <a href="/post/its-always-been-his-call"
+                <a href=""
                 class="text-decoration-none text-dark d-block h-100">
                     <div class="h-100">
-                        <img src="{{ asset('images/media-img-3.jpg') }}" class="img-fluid rounded mb-3" alt="Defining Favor">
+                        <img src="{{ asset('images/projects-portfolio.png') }}" class="img-fluid rounded mb-3" alt="Defining Favor">
 
-                        <h5 class="fw-normal">Defining Favor</h5>
+                        <h5 class="fw-normal">Portfolio</h5>
                         <p class="small text-muted">
                             In the journey of faith, understanding the “Favor of the Lord” is essential to living
                             a fulfilling life. This blog explores the…
