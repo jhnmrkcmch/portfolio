@@ -52,7 +52,7 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
 
                         <!-- BUTTONS -->
                         <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-sm btn-dark w-50">GitHub</a>
+                            <a href="https://github.com/jhnmrkcmch/mobo" class="btn btn-sm btn-dark w-50">GitHub</a>
                             <a href="#" class="btn btn-sm btn-outline-dark w-50">Live Demo</a>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
                         </div>
 
                         <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-sm btn-dark w-50">GitHub</a>
+                            <a href="https://github.com/arnoldsubastil/lighthouseWebsite/tree/testing-branch" class="btn btn-sm btn-dark w-50">GitHub</a>
                             <a href="#" class="btn btn-sm btn-outline-dark w-50">Live Demo</a>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
                         </div>
 
                         <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-sm btn-dark w-50">GitHub</a>
+                            <a href="https://github.com/jhnmrkcmch/portfolio" class="btn btn-sm btn-dark w-50">GitHub</a>
                             <a href="#" class="btn btn-sm btn-outline-dark w-50">Live Demo</a>
                         </div>
                     </div>
