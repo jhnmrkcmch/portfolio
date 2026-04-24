@@ -19,8 +19,8 @@
                 <ul class="list-unstyled">
                     <li><a href="{{ route('home') }}" class="text-muted text-decoration-none">Home</a></li>
                     <li><a href="{{ route('about.about') }}" class="text-muted text-decoration-none">About</a></li>
-                    <li><a href="{{ route('about.location') }}" class="text-muted text-decoration-none">Projects</a></li>
-                    <li><a href="{{ route('about.contact') }}" class="text-muted text-decoration-none">Contact</a></li>
+                    <li><a href="{{ route('about.about') }}" class="text-muted text-decoration-none">Projects</a></li>
+                    <li><a href="{{ route('about.about') }}" class="text-muted text-decoration-none">Contact</a></li>
                 </ul>
             </div>
 
@@ -42,8 +42,22 @@
                     <a href="https://www.linkedin.com/in/john-mark-camacho-bb9a59322/" target="_blank" rel="noopener noreferrer" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
                     <a href="https://github.com/jhnmrkcmch" target="_blank" rel="noopener noreferrer" class="text-white fs-5"><i class="bi bi-github"></i></a>
                 </div>
-            </div>
+                <br>
+                @guest
+                    <p class="nav-item"><a class="text-light" href="{{ route('login') }}">Admin/Log in</a></p>
+                @endguest
 
+                @auth
+                    <p>
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button class="nav-link btn btn-link" type="submit">
+                                Logout
+                            </button>
+                        </form>
+                    </p>
+                @endauth
+            </div>
         </div>
 
         <hr class="border-secondary">

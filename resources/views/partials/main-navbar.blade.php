@@ -35,37 +35,37 @@
                         <li><a class="dropdown-item" href="#skills">Skills / What I Do</a></li>
                     </ul>
                 </li>
+                
+<!-- projects -->
                 <li class="nav-item">
-                    <a href="{{ route('media.media') }}"
-                        class="nav-link {{ request()->routeIs('media*') ? 'active' : '' }}">
+                    <a href="{{ route('projects') }}"
+                        class="nav-link {{ request()->routeIs('projects*') ? 'active' : '' }}">
                         Projects
                     </a>                  
                 </li>
-<!-- Education -->
-                <li class="nav-item dropdown {{ request()->routeIs('education*') ? 'active' : '' }}">
+<!-- background -->
+                <li class="nav-item dropdown {{ request()->routeIs('background*') ? 'active' : '' }}">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                       href="{{ route('education.saltlight') }}"
+                       href="{{ route('background.education') }}"
                        role="button">
                         Background
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('education.littlewonders') }}">Education</a></li>
-                        <li><a class="dropdown-item" href="{{ route('education.saltlight') }}">Certificates</a></li>
-                        <li><a class="dropdown-item" href="{{ route('education.schoolofministry') }}">Interships</a></li>
+                        <li><a class="dropdown-item" href="{{ route('background.education') }}">Education</a></li>
+                        <li><a class="dropdown-item" href="{{ route('background.certificates') }}">Certificates</a></li>
+                        <li><a class="dropdown-item" href="{{ route('background.internships') }}">Interships</a></li>
                     </ul>
                 </li>
 <!-- Social Media -->
-                <li class="nav-item dropdown {{ request()->routeIs('socialmedia*') ? 'active' : '' }}">
-                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                       href="{{ route('socialmedia') }}"
-                       role="button">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
                         Contact
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://www.youtube.com/c/LighthouseChristianCommunity" target="_blank">Linked In</a></li>
-                        <li><a class="dropdown-item" href="https://www.tiktok.com/@lighthouseyyc" target="_blank">GitHub</a></li>
+                        <li><a class="dropdown-item" href="https://www.linkedin.com/in/john-mark-camacho-bb9a59322/" target="_blank">Linked In</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/jhnmrkcmch" target="_blank">GitHub</a></li>
                 </li>
             </ul>
         </div>

@@ -32,16 +32,16 @@
         <!-- Menu -->
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
             <ul class="navbar-nav align-items-center gap-lg-4">
-                <li class="nav-item"><a class="nav-link" href="{{ route('give') }}">Give</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('events') }}">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Give</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Events</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Check-In</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('ministries.viewall') }}">Groups</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Groups</a></li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{ route('about.about') }}">About</a></li>
-                        <li><a class="dropdown-item" href="{{ route('about.contact') }}">Contact</a></li>
+                        <li><a class="dropdown-item" href="">Contact</a></li>
                     </ul>
                 </li>
 
@@ -91,8 +91,8 @@
                 <ul class="list-unstyled">
                     <li><a href="{{ route('home') }}" class="text-muted text-decoration-none">Home</a></li>
                     <li><a href="{{ route('about.about') }}" class="text-muted text-decoration-none">About</a></li>
-                    <li><a href="{{ route('about.location') }}" class="text-muted text-decoration-none">Services</a></li>
-                    <li><a href="{{ route('about.contact') }}" class="text-muted text-decoration-none">Contact</a></li>
+                    <li><a href="" class="text-muted text-decoration-none">Services</a></li>
+                    <li><a href="" class="text-muted text-decoration-none">Contact</a></li>
                 </ul>
             </div>
 

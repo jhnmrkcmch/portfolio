@@ -47,15 +47,15 @@
     </a>
     @auth
         @if(auth()->user()->role === 'admin')
-            <a class="nav-link {{ request()->routeIs('admin.users') ? 'active' : '' }}" href="{{ route('admin.users') }}">
+            <a class=" {{ request()->routeIs('admin.users') ? 'active' : '' }}" href="{{ route('admin.users') }}">
                 <i class="bi bi-people"></i> Users
             </a>
         @endif
     @endauth
-    <a class="nav-link {{ request()->routeIs('admin.cards') ? 'active' : '' }}" href="{{ route('admin.cards', 'type') }}">
+    <a class=" {{ request()->routeIs('admin.cards') ? 'active' : '' }}" href="{{ route('admin.cards', 'type') }}">
         <i class="bi bi-box"></i> Cards
     </a>
-    <a class="nav-link {{ request()->routeIs('admin.content') ? 'active' : '' }}" href="{{ route('admin.content') }}">
+    <a class=" {{ request()->routeIs('admin.content') ? 'active' : '' }}" href="{{ route('admin.content') }}">
         <i class="bi bi-images"></i> Carousel Manager
     </a>
     <a href="#">

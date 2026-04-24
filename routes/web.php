@@ -3,10 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\MediaController;
 use App\Http\Controllers\MinistriesController;
 use App\Http\Controllers\NewhereController;
-use App\Http\Controllers\EducationController;
+use App\Http\Controllers\BackgroundController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AccountController;
@@ -29,19 +28,12 @@ Route::get('/events-by-date', [EventController::class, 'getByDate'])->name('even
 Route::get('/events-data', [EventController::class, 'getEvents'])->name('events.data');
 
 
-Route::get('/socialmedia', fn () => view('socialmedia'))->name('socialmedia');
-Route::get('/prayer', fn () => view('prayer'))->name('prayer');
-Route::get('/give', fn () => view('give'))->name('give');
+Route::get('/projects', fn () => view('projects'))->name('projects');
+
 
 
 Route::prefix('about')->name('about.')->group(function () {
     Route::get('/', [AboutController::class, 'about'])->name('about');
-    Route::get('/location', [AboutController::class, 'location'])->name('location');
-    Route::get('/vision', [AboutController::class, 'vision'])->name('vision');
-    Route::get('/beliefs', [AboutController::class, 'beliefs'])->name('beliefs');
-    Route::get('/pastors', [AboutController::class, 'pastors'])->name('pastors');
-    Route::get('/team', [AboutController::class, 'team'])->name('team');
-    Route::get('/contact', [AboutController::class, 'contact'])->name('contact');
 });
 
 Route::prefix('ministries')->name('ministries.')->group(function () {
@@ -60,19 +52,12 @@ Route::prefix('newhere')->name('newhere.')->group(function () {
     Route::get('/culture', [NewhereController::class, 'culture'])->name('culture');
 });
 
-Route::prefix('education')->name('education.')->group(function () {
-    Route::get('/', [EducationController::class, 'education'])->name('littlewonders');
-    Route::get('/saltlight', [EducationController::class, 'saltlight'])->name('saltlight');
-    Route::get('/schoolofministry', [EducationController::class, 'schoolofministry'])->name('schoolofministry');
+Route::prefix('background')->name('background.')->group(function () {
+    Route::get('/education', [BackgroundController::class, 'education'])->name('education');
+    Route::get('/certificates', [BackgroundController::class, 'certificates'])->name('certificates');
+    Route::get('/internships', [BackgroundController::class, 'internships'])->name('internships');
 });
 
-Route::prefix('media')->name('media.')->group(function () {
-    Route::get('/', [MediaController::class, 'media'])->name('media');
-    Route::get('/audiopodcasts', [MediaController::class, 'audiopodcasts'])->name('audiopodcasts');
-    Route::get('/prevmessages', [MediaController::class, 'prevmessages'])->name('prevmessages');
-    Route::get('/sermonblogs', [MediaController::class, 'sermonblogs'])->name('sermonblogs');
-    Route::get('/watchlive', [MediaController::class, 'watchlive'])->name('watchlive');
-});
 
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');

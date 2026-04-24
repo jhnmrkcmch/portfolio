@@ -17,18 +17,9 @@
 /* Navbar Pages */
 @import './navbar/education.css';
 @import './navbar/home.css';
-@import './navbar/media.css';
-@import './navbar/socialmedia.css';
 
 /* About Pages */
 @import './about/about.css';
-@import './about/location.css';
-@import './about/vision.css';
-@import './about/beliefs.css';
-@import './about/contact.css';
-@import './about/pastors.css';
-@import './about/team.css';
-
 
 /* Education */
 @import './education/littlewonders.css';

@@ -33,10 +33,10 @@
         <!-- Menu -->
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
             <ul class="navbar-nav align-items-center gap-lg-4">
-                <li class="nav-item"><a class="nav-link" href="{{ route('give') }}">Give</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('events') }}">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Give</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Events</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Check-In</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('ministries.viewall') }}">Groups</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Groups</a></li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>

@@ -25,7 +25,7 @@
 </style>
 <!-- HERO -->
 <section class="landing-page d-flex align-items-center justify-content-center text-center" 
-style="background-image: url('{{ asset('images/schoolofministry-bg.jpg') }}');">
+style="background-image: url('{{ asset('images/cert-bg.jpg') }}');">
     <div class="overlay"></div>
 
     <div class="content position-relative" data-aos="fade-up" data-aos-duration="2000">
@@ -69,17 +69,17 @@ style="background-image: url('{{ asset('images/schoolofministry-bg.jpg') }}');">
 
                     <a href="#" class="btn btn-outline-dark text-start cert-btn"
                        data-img="{{ asset('images/lcc-admin-user.png') }}">
-                        Online Giving <span class="float-end">&rsaquo;</span>
+                        JavaScript <span class="float-end">&rsaquo;</span>
                     </a>
 
                     <a href="#" class="btn btn-outline-dark text-start cert-btn"
                        data-img="{{ asset('images/lcc-admin-carousel.png') }}">
-                        View All Messages <span class="float-end">&rsaquo;</span>
+                        Internship <span class="float-end">&rsaquo;</span>
                     </a>
 
                     <a href="#" class="btn btn-outline-dark text-start cert-btn"
                        data-img="{{ asset('images/projects-mobo.png') }}">
-                        Live Chat <span class="float-end">&rsaquo;</span>
+                        Jquery <span class="float-end">&rsaquo;</span>
                     </a>
 
                 </div>

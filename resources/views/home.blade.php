@@ -27,7 +27,7 @@
                     Specializing in Laravel-based systems, admin dashboards, and content management solutions.
                 </p>
 
-                <a href="{{ asset('johnmarkcamacho.pdf') }}" download><button class="btn btn-primary btn-custom me-2">Download CV</button></a>
+                <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-primary btn-custom me-2">Download CV</button></a>
                 <button class="btn btn-outline-secondary btn-custom">View My Work</button>
             </div>
         </div>
