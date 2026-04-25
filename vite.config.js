@@ -15,7 +15,10 @@ export default defineConfig({
             refresh: true,
         }),
         tailwindcss(),
-    ],
+    ],build: {
+        outDir: 'public/build',
+        emptyOutDir: true,
+    }
 });
 
 // import { defineConfig } from 'vite';
