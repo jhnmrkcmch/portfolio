@@ -165,6 +165,48 @@
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px !important;
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Reduce side padding */
+    .pe-5 {
+        padding-right: 0 !important;
+    }
+
+    /* Center content slightly for better balance */
+    .col-lg-6 {
+        text-align: center;
+    }
+
+    /* Buttons stack nicely */
+    .btn-custom {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Image scaling */
+    .profile-img {
+        max-height: 280px !important;
+        margin-top: 20px;
+    }
+
+    /* Reduce inner spacing */
+    .bg-dark {
+        padding: 25px !important;
+    }
+}
 /* .cta-section {
     min-height: 70vh;
     background-image: 
@@ -180,10 +222,9 @@
     min-height: 50vh;
     background-image:
         linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-        url('../../public/images/cta-bg.jpg');
+        url('/images/cta-bg.jpg');
     background-size: cover;
     background-position: center center;
-
 }
 
 

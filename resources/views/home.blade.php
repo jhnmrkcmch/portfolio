@@ -18,42 +18,58 @@
     <div class="w-100 h-100 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2000">
 
         <!-- Main Card -->
-        <div class="bg-dark rounded-4 shadow-sm d-flex align-items-center"
+        <div class="bg-dark rounded-4 shadow-sm"
              style="width:100%; max-width:1400px; min-height:80vh; padding:60px;">
         
-            <div class="row w-100 align-items-center">
-
-                <!-- LEFT -->
-                <div class="col-lg-6 pe-5">
+            <div class="visit-grid" data-aos="fade-up" data-aos-duration="2000">
+                <div class="image-wrapper mx-auto">
+                    <img src="{{ asset('images/profileimage.jpg') }}" class="img-fluid community-image" style="height: 480px; width: 320px;"/>
+                </div>
+            
+                <div class="visit-content">
+                    <hr />
                     <p class="mb-2 fs-5 text-light">Hello,</p>
-
-                    <h1 class="fw-bold text-light" style="font-size:64px;">
+                    <h1 class="fw-bold text-light responsive-title" style="font-size:64px;">
                       I am John Mark.
                     </h1>
-                
-                    <h3 class="mb-4" style="color:#acacac; font-weight:600;">
+                    <h3 class="mb-3 mb-lg-4 text-secondary" style="color:#acacac; font-weight:600;">
                       Web Developer
                     </h3>
+
+                    <p class="text-muted">
+                        Specializing in Laravel-based systems, admin dashboards, and content management solutions.
+                    </p>
                 
-                    <div class="col-md-8">
-                        <p class="text-muted">
-                            Specializing in Laravel-based systems, admin dashboards, and content management solutions.
-                        </p>
-                    
-                        <br>
-                        <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom me-2">Download CV</button></a>
-                        <button class="btn btn-outline-secondary btn-custom">View My Work</button>
-                    </div>
-              
-                </div>
-          
-                <!-- RIGHT -->
-                <div class="col-lg-6 position-relative d-flex justify-content-center align-items-center">
-                    <img src="{{ asset('images/output-image.jpg') }}"
-                       class="img-fluid position-relative profile-img"
-                       style="z-index:1; max-height:520px;">
+                    <br>
+                    <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom me-2 mb-2">Download CV</button></a>
+                    <button class="btn btn-outline-secondary btn-custom">View My Work</button>
+
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="visit">
+    <div class="visit-grid" data-aos="fade-up" data-aos-duration="2000">
+        <div class="image-wrapper mx-auto">
+          <img src="{{ asset('images/home-pic2.jpg') }}" class="img-fluid community-image" style="height: 480px; width: 320px;"/>
+        </div>
+
+        <div class="visit-content">
+          <hr />
+
+          <h2>Let’s Build Something Together</h2>
+
+          <p>
+            I build Laravel-based admin systems and CMS-driven websites that are scalable, secure, and easy to manage.
+          </p>
+
+          <p>
+            From backend systems to dynamic websites, I focus on building clean, scalable, and user-friendly solutions.
+          </p>
+
+          <a href="#" class="buy-link-white">View My Projects</a>
         </div>
     </div>
 </section>
@@ -98,30 +114,6 @@
 
 </div> --}}
 
-<section class="visit">
-    <div class="visit-grid" data-aos="fade-up" data-aos-duration="2000">
-        <div class="image-wrapper mx-auto">
-          <img src="{{ asset('images/profileimage.jpg') }}" class="img-fluid community-image" style="height: 480px; width: 320px;"/>
-        </div>
-
-        <div class="visit-content">
-          <hr />
-
-          <h2>Let’s Build Something Together</h2>
-
-          <p>
-            I build Laravel-based admin systems and CMS-driven websites that are scalable, secure, and easy to manage.
-          </p>
-
-          <p>
-            From backend systems to dynamic websites, I focus on building clean, scalable, and user-friendly solutions.
-          </p>
-
-          <a href="#" class="buy-link-white">View My Projects</a>
-        </div>
-    </div>
-</section>
-
 <!-- CTA -->
 <section class="cta-section d-flex align-items-center text-center text-white">
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
@@ -147,7 +139,10 @@
     </div>
 </section>
 
-<!-- Livestream -->
+
+
+
+
 <section class="livestream-section py-5">
     <div class="container" data-aos="fade-up" data-aos-duration="2000">
         <h2 class="text-white fw-light mb-3">Custom Web Development</h2>
@@ -160,6 +155,7 @@
         </ul>
     </div>
 </section>
+
 <script>
 window.addEventListener('scroll', function(){
     const section = document.querySelector('.cta-section');

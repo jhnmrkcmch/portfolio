@@ -103,7 +103,7 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
 
                         <div class="d-flex gap-2">
                             <a href="https://github.com/jhnmrkcmch/portfolio" class="btn btn-sm btn-dark w-50">GitHub</a>
-                            <a href="#" class="btn btn-sm btn-outline-dark w-50">Live Demo</a>
+                            <a href="https://johnmarkcamacho.onrender.com/" class="btn btn-sm btn-outline-dark w-50">Live Demo</a>
                         </div>
                     </div>
                 </div>
