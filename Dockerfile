@@ -8,7 +8,10 @@ RUN apt-get update && apt-get install -y \
     libpng-dev libjpeg-dev libfreetype6-dev
 
 # PHP extensions
-RUN docker-php-ext-install pdo pdo_mysql
+RUN apt-get update && apt-get install -y \
+    libpq-dev \
+    libpng-dev libjpeg-dev libfreetype6-dev \
+    && docker-php-ext-install pdo pdo_pgsql pdo_mysql
 
 # Node.js (required for Vite)
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
@@ -32,8 +35,6 @@ RUN if [ -f package.json ]; then npm run build || echo "Vite build skipped"; fi
 # Fix permissions (VERY IMPORTANT on Render)
 RUN chmod -R 777 storage bootstrap/cache
 
-# Clean cache (prevents bootstrap crash)
-RUN php artisan optimize:clear
 
 EXPOSE 10000
 
