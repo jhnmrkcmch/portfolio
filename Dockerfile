@@ -29,17 +29,23 @@ RUN composer install --no-dev --optimize-autoloader
 # ========================
 # NODE (MATCH LOCAL BUILD)
 # ========================
+# Install Node
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get install -y nodejs
 
-# CLEAN INSTALL (IMPORTANT - MATCH YOUR WORKING STATE)
-RUN rm -rf node_modules package-lock.json
-RUN npm install
-
-# CLEAN VITE OUTPUT
+# IMPORTANT: clean EVERYTHING (prevents cross-OS issues)
+RUN rm -rf node_modules
+RUN rm -rf package-lock.json
 RUN rm -rf public/build
 
-# BUILD FRONTEND (THIS MUST MATCH YOUR LOCAL SUCCESS)
+# Install fresh Linux-compatible dependencies
+RUN npm install --no-audit --no-fund
+
+# Force correct environment for native modules
+ENV npm_config_platform=linux
+ENV npm_config_arch=x64
+
+# Build frontend
 RUN npm run build
 
 # ========================
