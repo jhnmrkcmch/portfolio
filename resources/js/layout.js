@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import '../css/app.css';
 
 window.$ = window.jQuery = $;
 
