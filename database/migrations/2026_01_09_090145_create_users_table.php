@@ -25,8 +25,7 @@ return new class extends Migration
             $table->timestamps();   
         });
 
-        DB::statement('ALTER TABLE users AUTO_INCREMENT = 22142791');
-
+        
         DB::table('users')->insert([
             'name' => 'Admin',
             'email' => 'admin@example.com',
