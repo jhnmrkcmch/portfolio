@@ -8,9 +8,8 @@ export default defineConfig({
         react(),
         laravel({
             input: [
-                'resources/css/layout/layout.css',
+                'resources/css/app.css',
                 'resources/js/layout.js',
-                'resources/js/app.jsx'
             ],
             refresh: true,
         }),
