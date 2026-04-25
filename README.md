@@ -16,7 +16,42 @@ Personal developer portfolio built with Laravel and Bootstrap, featuring an admi
 - MySQL
 
 ## 📷 Screenshots
-(Add screenshots here later)
+
+## 🚀 Overview
+This is a Laravel-based personal portfolio website featuring:
+- CMS-based structure
+- Role-based access control
+- Responsive design
+- Admin dashboard system
+
+### 🏠 Home Page
+![Home](screenshots/home.png)
+
+---
+
+### 👤 About Page
+![About](screenshots/about.png)
+
+---
+
+### 💼 Projects Page
+![Projects](screenshots/projects.png)
+
+---
+
+### 🎓 Background - Education
+![Education](screenshots/education.png)
+
+---
+
+### 📜 Background - Certificates
+![Certificates](screenshots/certificates.png)
+
+---
+
+### 🧑‍💼 Background - Internships
+![Internships](screenshots/internships.png)
+
 
 ## ⚙️ Installation
 1. Clone the repo
