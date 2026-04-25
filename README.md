@@ -23,7 +23,7 @@ Personal developer portfolio built with Laravel and Bootstrap, featuring an admi
 2. Run `composer install`
 3. Run `npm install`
 4. Set up `.env`
-5. Run `npm run devl`
+5. Run `npm run dev`
 6. Run `php artisan migrate`
 7. Run `php artisan serve`
 

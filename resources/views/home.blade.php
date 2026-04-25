@@ -12,57 +12,51 @@
 @section('hide', false)
 @section('content')
 
-<div class="container">
-    <div class="main-card">
-        <!-- Hero Section -->
-        <div class="row align-items-center">
-            <div class="col-md-4 text-center">
-                <img src="{{ asset('images/output-image.jpg') }}" class="profile-img" alt="Profile">
-            </div>
 
-            <div class="col-md-8">
-                <p class="text-muted mb-1">Web Developer (Laravel)</p>
-                <h1 class="fw-bold">John Mark Camacho</h1>
-                <p class="text-muted">
-                    Specializing in Laravel-based systems, admin dashboards, and content management solutions.
-                </p>
 
-                <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-primary btn-custom me-2">Download CV</button></a>
-                <button class="btn btn-outline-secondary btn-custom">View My Work</button>
-            </div>
-        </div>
+<section style="background:#ffffff; min-height:100vh; padding:40px;">
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2000">
 
-        <!-- What I Do -->
-        <div class="mt-5">
-            <h5 class="fw-bold mb-4">What I Do</h5>
+        <!-- Main Card -->
+        <div class="bg-dark rounded-4 shadow-sm d-flex align-items-center"
+             style="width:100%; max-width:1400px; min-height:80vh; padding:60px;">
+        
+            <div class="row w-100 align-items-center">
 
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h6>💻 Laravel Web Development</h6>
-                    <p class="text-muted">Building dynamic CMS-based websites using Laravel with clean architecture and structured backend logic.</p>
+                <!-- LEFT -->
+                <div class="col-lg-6 pe-5">
+                    <p class="mb-2 fs-5 text-light">Hello,</p>
+
+                    <h1 class="fw-bold text-light" style="font-size:64px;">
+                      I am John Mark.
+                    </h1>
+                
+                    <h3 class="mb-4" style="color:#acacac; font-weight:600;">
+                      Web Developer
+                    </h3>
+                
+                    <div class="col-md-8">
+                        <p class="text-muted">
+                            Specializing in Laravel-based systems, admin dashboards, and content management solutions.
+                        </p>
+                    
+                        <br>
+                        <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom me-2">Download CV</button></a>
+                        <button class="btn btn-outline-secondary btn-custom">View My Work</button>
+                    </div>
+              
                 </div>
-
-                <div class="col-md-6 mb-4">
-                    <h6>⚙️ Backend Development (Laravel)</h6>
-                    <p class="text-muted">
-                        Developing secure backend systems, APIs, authentication, and database logic using Laravel
-                    </p>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <h6>🗄️ Version Control</h6>
-                    <p class="text-muted">Utilized Git for version control to manage code history, collaborate effectively in team projects, and ensure smooth integration of changes across development workflows.</p>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <h6>🛠️ CMS Development & Customization</h6>
-                    <p class="text-muted">Creating and customizing CMS-based websites with Laravel to manage content, users, and system functionality.</p>
+          
+                <!-- RIGHT -->
+                <div class="col-lg-6 position-relative d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('images/output-image.jpg') }}"
+                       class="img-fluid position-relative profile-img"
+                       style="z-index:1; max-height:520px;">
                 </div>
             </div>
         </div>
-
     </div>
-</div>
+</section>
 
 
 <!-- Banner -->
@@ -104,8 +98,6 @@
 
 </div> --}}
 
-
-<!-- Visit -->
 <section class="visit">
     <div class="visit-grid" data-aos="fade-up" data-aos-duration="2000">
         <div class="image-wrapper mx-auto">
@@ -166,9 +158,6 @@
             <li class="text-secondary">Flexible UI/UX (your design or mine)</li>
             <li class="text-secondary">CMS-enabled for full control</li>
         </ul>
-        <a href="#" class="btn btn-light px-4 py-2">
-            GitHub
-        </a>
     </div>
 </section>
 <script>

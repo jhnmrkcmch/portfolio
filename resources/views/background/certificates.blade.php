@@ -59,7 +59,7 @@ style="background-image: url('{{ asset('images/cert-bg.jpg') }}');">
 
                     <a href="#" class="btn btn-outline-dark text-start cert-btn active"
                        data-img="{{ asset('images/lcc-admin-cards.png') }}">
-                        Laravel <span class="float-end">&rsaquo;</span>
+                        CMS <span class="float-end">&rsaquo;</span>
                     </a>
 
                     <a href="#" class="btn btn-outline-dark text-start cert-btn"
@@ -73,7 +73,7 @@ style="background-image: url('{{ asset('images/cert-bg.jpg') }}');">
                     </a>
 
                     <a href="#" class="btn btn-outline-dark text-start cert-btn"
-                       data-img="{{ asset('images/lcc-admin-carousel.png') }}">
+                       data-img="{{ asset('images/intern-prov10-cert.jpg') }}">
                         Internship <span class="float-end">&rsaquo;</span>
                     </a>
 

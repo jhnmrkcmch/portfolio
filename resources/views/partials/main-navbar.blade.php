@@ -32,7 +32,7 @@
 
                     <ul class="dropdown-menu" >
                         <li><a class="dropdown-item" href="{{ route('about.about') }}">About Me</a></li>
-                        <li><a class="dropdown-item" href="#skills">Skills / What I Do</a></li>
+                        <li><a class="dropdown-item" href="{{ route('about.about') . '#skills' }}">Skills / What I Do</a></li>
                     </ul>
                 </li>
                 

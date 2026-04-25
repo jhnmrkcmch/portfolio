@@ -15,3 +15,28 @@
     letter-spacing: 1px;
     color: #333;
 }
+.skill-card {
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.tech-badge {
+    padding: 12px 20px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+.tech-badge:hover {
+    background: #c9c9c9;
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}

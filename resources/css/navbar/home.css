@@ -36,23 +36,33 @@
 }
 
 .profile-img {
-    width: 280px;
-    height: 280px;
+    width: 340px;
+    height: 340px;
     border-radius: 50%;
     object-fit: cover;
     border: 8px solid #f1f1f1;
 }
 .nav-link {
-  color: #555 !important;
-  font-weight: 500;
+    color: #555 !important;
+    font-weight: 500;
 }
 .btn-custom {
-  border-radius: 30px;
-  padding: 10px 25px;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+.me-2 {
+    background: #f1f1f1;
+}
+.btn-custom:hover {
+    color: #f1f1f1;
+}
+.me-2:hover {
+    background: #1f1f1f;
+    border: 1px solid #fff;
 }
 .service-icon {
-  font-size: 30px;
-  color: #4e73df;
+    font-size: 30px;
+    color: #727272;
 }
 
 

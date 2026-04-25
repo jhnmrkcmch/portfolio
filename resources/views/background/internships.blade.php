@@ -107,11 +107,11 @@ style="background-image: url('{{ asset('images/internship-bg.jpg') }}');">
                 <!-- TECH STACK -->
                 <div class="mt-4">
                     <p class="fw-bold mb-2">Tech Stack:</p>
-                    <span class="badge tech-badge">CMS Tools</span>
-                    <span class="badge tech-badge">Bootstrap</span>
-                    <span class="badge tech-badge">JavaScript</span>
-                    <span class="badge tech-badge">Manual Testing / Debugging</span>
-                    <span class="badge tech-badge">MySQL</span>
+                    <span class="badge tech-badge bg-white text-dark">CMS Tools</span>
+                    <span class="badge tech-badge bg-white text-dark">Bootstrap</span>
+                    <span class="badge tech-badge bg-white text-dark">JavaScript</span>
+                    <span class="badge tech-badge bg-white text-dark">Manual Testing / Debugging</span>
+                    <span class="badge tech-badge bg-white text-dark">MySQL</span>
                 </div>
 
                 <!-- HIGHLIGHT -->

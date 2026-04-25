@@ -53,38 +53,139 @@ h2 {
 
 
 <!-- Block 4 -->
-<section class="block-section py-5" id="skills">
+<section id="skills" class="py-5" style="background:#f8f9fa;">
+
     <div class="container">
-        <div class="row align-items-center gy-5">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
-                <h2 class="fw-light mb-3">How I Work</h2>
-                <div class="title-line mb-4"></div>
-
-                <ul>
-                    <li>Clear communication throughout the project</li>
-                    <li>Clean, maintainable code</li>
-                    <li>Performance and usability focused</li>
-                    <li>On-time delivery</li>
-                </ul>
-
-
-                <br>
-                <h2 class="fw-light mb-3">Skills</h2>
-                <div class="title-line mb-4"></div>
-
-                <ul>
-                    <li>Backend: Laravel, PHP</li>
-                    <li>Frontend: HTML, CSS, JavaScript, Bootstrap</li>
-                    <li>Database: MySQL</li>
-                    <li>Other: Git, Responsive Design</li>
-                </ul>
-            </div>
-
-            <div class="image-wrapper mx-auto">
-                <img src="{{ asset('images/profileimage.jpg') }}" class="img-fluid community-image" style="height: 480px;"/>
-            </div>
+        <!-- HEADER -->
+        <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
+            <h2 class="fw-bold" style="font-size:42px;">What I Do</h2>
+            <p class="text-muted fs-5">
+              My skills, expertise, and technical capabilities
+            </p>
         </div>
+        <!-- SKILL CARDS -->
+        <div class="row g-4 mb-5" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100 skill-card">
+                    <h5 class="fw-bold mb-3">💻 Laravel Web Development</h5>
+                    <p class="text-muted mb-0">
+                      Building dynamic CMS-based websites using Laravel with clean architecture and structured backend logic.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100 skill-card">
+                    <h5 class="fw-bold mb-3">⚙️ Backend Development</h5>
+                    <p class="text-muted mb-0">
+                      Developing secure backend systems, APIs, authentication, and database logic using Laravel.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100 skill-card">
+                    <h5 class="fw-bold mb-3">🗄️ Version Control</h5>
+                    <p class="text-muted mb-0">
+                      Using Git to manage code history, collaborate with teams, and ensure smooth integration across workflows.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 skill-card">
+                        <h5 class="fw-bold mb-3">🛠️ CMS Development</h5>
+                        <p class="text-muted mb-0">
+                          Creating and customizing CMS platforms with Laravel to manage content, users, and system functionality.
+                        </p>
+                    </div>
+            </div>
+
+        </div>
+        
+
+        <!-- DIVIDER -->
+        <div class="text-center mb-4">
+            <span class="text-uppercase text-muted small">Technologies I Use</span>
+            <div style="width:80px; height:3px; background:#333; margin:10px auto; border-radius:5px;"></div>
+        </div>
+
+        <!-- TECH STACK -->
+        <div class="d-flex flex-wrap justify-content-center gap-3" data-aos="fade-up" data-aos-duration="2000">
+            <span class="tech-badge">Laravel</span>
+            <span class="tech-badge">CMS Development</span>
+            <span class="tech-badge">Role-Based Access Control (RBAC)</span>
+            <span class="tech-badge">Responsive Web Design</span>
+            <span class="tech-badge">REST APIs</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Git & GitHub</span>
+        </div>
+
     </div>
+</section>
+<section class="py-5" style="background:#f8f9fa;">
+
+    <div class="container" data-aos="fade-up" data-aos-duration="2000">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Development Workflow</h2>
+            <p class="text-muted">How I build scalable web applications</p>
+        </div>
+
+        <div class="row g-4 text-center">
+
+            <!-- STEP 1 -->
+            <div class="col-md-3">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                    <h5 class="fw-bold">01</h5>
+                    <p class="fw-bold">Planning & System Design</p>
+                    <p class="text-muted">
+                        Analyze requirements, design database structure, and plan system features 
+                        including CMS, user roles, and admin workflows.
+                    </p>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="col-md-3">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                    <h5 class="fw-bold">02</h5>
+                    <p class="fw-bold">Backend Development</p>
+                    <p class="text-muted">
+                        Develop core functionalities using Laravel, including authentication, 
+                        role-based access control, APIs, and content management systems.
+                    </p>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="col-md-3">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                    <h5 class="fw-bold">03</h5>
+                    <p class="fw-bold">Testing & Debugging</p>
+                    <p class="text-muted">
+                        Test system logic, fix errors, debug database issues, and ensure smooth 
+                        user experience across all features and workflows.
+                    </p>
+                </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="col-md-3">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                    <h5 class="fw-bold">04</h5>
+                    <p class="fw-bold">Optimization & Deployment</p>
+                    <p class="text-muted">
+                        Optimize performance, clean codebase, and prepare projects for deployment 
+                        (local or hosting) with responsive and production-ready setup.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- block 7 -->
@@ -97,57 +198,4 @@ h2 {
         </div>
     </div>
 </section>
-
-<!-- Discover More -->
-<section class="discover-section py-5" data-aos="fade-up" data-aos-duration="2000">
-    <div class="container text-center">
-        <h2 class="discover-title mb-5">What I Do</h2>
-
-        <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-sm">
-                    <div class="discover-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-code-icon lucide-square-code"><path d="m10 9-3 3 3 3"/><path d="m14 15 3-3-3-3"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>              
-                        <h5>Laravel Development</h5>
-                        <p>Build secure and scalable web applications.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-sm">
-                    <div class="discover-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-chart-column-increasing-icon lucide-file-chart-column-increasing"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M8 18v-2"/><path d="M12 18v-4"/><path d="M16 18v-6"/></svg>
-                    
-                        <h5>Custom Systems</h5>
-                        <p>Admin panels, dashboards, and business tools.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card  shadow-sm">
-                    <div class="discover-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-smartphone-icon lucide-monitor-smartphone"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg>
-
-                    
-                        <h5>Responsive Design</h5>
-                        <p>Optimized for mobile, tablet, and desktop.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-sm">
-                    <div class="discover-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-cog-icon lucide-file-cog"><path d="M15 8a1 1 0 0 1-1-1V2a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8z"/><path d="M20 8v12a2 2 0 0 1-2 2h-4.182"/><path d="m3.305 19.53.923-.382"/><path d="M4 10.592V4a2 2 0 0 1 2-2h8"/><path d="m4.228 16.852-.924-.383"/><path d="m5.852 15.228-.383-.923"/><path d="m5.852 20.772-.383.924"/><path d="m8.148 15.228.383-.923"/><path d="m8.53 21.696-.382-.924"/><path d="m9.773 16.852.922-.383"/><path d="m9.773 19.148.922.383"/><circle cx="7" cy="18" r="3"/></svg>
-                        <h5>CMS Solutions</h5>
-                        <p>Manage website content easily with custom systems.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 @endsection

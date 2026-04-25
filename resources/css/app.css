@@ -30,3 +30,7 @@
 /* Auth */
 @import './auth/login.css';
 @import './auth/signup.css';
+
+html {
+  scroll-behavior: smooth;
+}
