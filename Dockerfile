@@ -2,11 +2,17 @@ FROM php:8.2-cli
 
 WORKDIR /app
 
-# System dependencies
+# Install system deps
 RUN apt-get update && apt-get install -y \
     unzip curl git zip \
-    libpng-dev libjpeg-dev libfreetype6-dev \
-    && docker-php-ext-install pdo pdo_mysql
+    libpng-dev libjpeg-dev libfreetype6-dev
+
+# Install PHP extensions
+RUN docker-php-ext-install pdo pdo_mysql
+
+# Install Node.js (needed for Vite)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs
 
 # Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -14,16 +20,16 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Copy project
 COPY . .
 
-# Install dependencies
+# Install PHP deps
 RUN composer install --no-dev --optimize-autoloader
 
-# Fix permissions (IMPORTANT for Render)
-RUN chmod -R 777 storage bootstrap/cache
+# Install JS deps + build Vite
+RUN npm install
+RUN npm run build
 
-# Remove broken cached config (VERY IMPORTANT)
-RUN rm -rf bootstrap/cache/*.php
+# Permissions
+RUN chmod -R 777 storage bootstrap/cache
 
 EXPOSE 10000
 
-# Clean start (NO double clear commands)
 CMD php artisan optimize:clear && php artisan serve --host=0.0.0.0 --port=10000
