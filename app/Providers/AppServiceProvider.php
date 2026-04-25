@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\Models\Card;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -30,6 +31,10 @@ class AppServiceProvider extends ServiceProvider
         Route::middleware('api')
             ->prefix('api')
             ->group(base_path('routes/api.php'));
+        
+        if (env('APP_ENV') === 'production') {
+            URL::forceScheme('https');
+        }
 
     }
 }
