@@ -27,23 +27,23 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 
 # =========================
-# NODE + VITE FIX (CRITICAL)
+# NODE + VITE (STABLE BUILD)
 # =========================
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get install -y nodejs
 
-# CLEAN FRONTEND INSTALL (FIXES TAILWIND OXIDE CRASH)
+# Clean install (fixes Tailwind / dependency issues)
 RUN rm -rf node_modules package-lock.json
 RUN npm install --legacy-peer-deps
 
-# FORCE CLEAN BUILD OUTPUT
+# Clean previous build
 RUN rm -rf public/build
 
-# PREVENT MEMORY ISSUES
+# Prevent memory crashes (important for Render)
 ENV NODE_OPTIONS=--max-old-space-size=4096
 
-# BUILD FRONTEND SAFELY
-RUN npm run build --legacy-peer-deps || echo "Vite build completed with warnings"
+# Build frontend safely
+RUN npm run build --legacy-peer-deps
 
 # =========================
 # PERMISSIONS
@@ -51,8 +51,8 @@ RUN npm run build --legacy-peer-deps || echo "Vite build completed with warnings
 RUN chmod -R 777 storage bootstrap/cache
 
 # =========================
-# IMPORTANT: DO NOT RUN DB MIGRATIONS HERE
-# (Render DB is not ready at build time)
+# IMPORTANT NOTE
+# DO NOT run migrations during build
 # =========================
 
 EXPOSE 10000
