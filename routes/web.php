@@ -20,7 +20,9 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    return 'HOME WORKS';
+});
 
 Route::get('/reactPractice', fn () => view('reactPractice'))->name('reactPractice');
 
