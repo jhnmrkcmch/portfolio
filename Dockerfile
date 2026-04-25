@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 # Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Copy app (INCLUDING public/build)
+# Copy everything (including public/build)
 COPY . .
 
 # PHP deps
