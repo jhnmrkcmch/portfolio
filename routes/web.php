@@ -21,6 +21,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
 Route::get('/reactPractice', fn () => view('reactPractice'))->name('reactPractice');
 
 Route::get('/events', [EventController::class, 'index'])->name('events');
@@ -29,8 +30,6 @@ Route::get('/events-data', [EventController::class, 'getEvents'])->name('events.
 
 
 Route::get('/projects', fn () => view('projects'))->name('projects');
-
-
 
 Route::prefix('about')->name('about.')->group(function () {
     Route::get('/', [AboutController::class, 'about'])->name('about');
