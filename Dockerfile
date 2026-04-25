@@ -43,7 +43,7 @@ RUN rm -rf public/build
 ENV NODE_OPTIONS=--max-old-space-size=4096
 
 # Build frontend safely
-RUN npm run build --legacy-peer-deps
+RUN npm run build
 
 # =========================
 # PERMISSIONS
