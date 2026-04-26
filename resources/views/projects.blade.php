@@ -48,6 +48,7 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
                             <span class="badge tech-badge">Laravel</span>
                             <span class="badge tech-badge">PHP</span>
                             <span class="badge tech-badge">MySQL</span>
+                            <span class="badge tech-badge">Bootstrap</span>
                         </div>
 
                         <!-- BUTTONS -->
@@ -74,6 +75,8 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
                             <span class="badge tech-badge">Laravel</span>
                             <span class="badge tech-badge">Bootstrap</span>
                             <span class="badge tech-badge">JavaScript</span>
+                            <span class="badge tech-badge">CMS</span>
+                            <span class="badge tech-badge">MySQL</span>
                         </div>
 
                         <div class="d-flex gap-2">
@@ -96,9 +99,11 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
                         </p>
 
                         <div class="mb-3">
+                            <span class="badge tech-badge">Laravel</span>
                             <span class="badge tech-badge">PHP</span>
                             <span class="badge tech-badge">MySQL</span>
                             <span class="badge tech-badge">Bootstrap</span>
+                            <span class="badge tech-badge">CMS</span>
                         </div>
 
                         <div class="d-flex gap-2">

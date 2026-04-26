@@ -14,7 +14,7 @@
 
 
 
-<section style="background:#ffffff; min-height:100vh; padding:40px;">
+{{-- <section style="background:#ffffff; min-height:100vh; padding:40px;">
     <div class="w-100 h-100 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2000">
 
         <!-- Main Card -->
@@ -30,7 +30,7 @@
                     <hr />
                     <p class="mb-2 fs-5 text-light">Hello,</p>
                     <h1 class="fw-bold text-light responsive-title" style="font-size:64px;">
-                      I am John Mark Camacho.
+                      I am John Mark.
                     </h1>
                     <h3 class="mb-3 mb-lg-4 text-secondary" style="color:#acacac; font-weight:600;">
                       Web Developer
@@ -48,28 +48,32 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section class="visit">
     <div class="visit-grid" data-aos="fade-up" data-aos-duration="2000">
         <div class="image-wrapper mx-auto">
-          <img src="{{ asset('images/home-pic2.jpg') }}" class="img-fluid community-image" style="height: 480px; width: 320px;"/>
+            <img src="{{ asset('images/profileimage.jpg') }}" class="img-fluid community-image" style="height: 480px; width: 320px;"/>
         </div>
 
         <div class="visit-content">
-          <hr />
+            <hr />
 
-          <h2>Let’s Build Something Together</h2>
+            <p class="mb-2 fs-5 text-light">Hello,</p>
+            <h1 class="fw-bold text-light responsive-title" style="font-size:64px;">
+                I am John Mark.
+            </h1>
 
-          <p>
-            I build Laravel-based admin systems and CMS-driven websites that are scalable, secure, and easy to manage.
-          </p>
+            <p>
+                  Specializing in Laravel-based systems, admin dashboards, and content management solutions.
+            </p>
 
-          <p>
-            From backend systems to dynamic websites, I focus on building clean, scalable, and user-friendly solutions.
-          </p>
+            <p>
+                From backend systems to dynamic websites, I focus on building clean, scalable, and user-friendly solutions.
+            </p>
 
-          <a href="#" class="buy-link-white">View My Projects</a>
+            <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom me-2 mb-2">Download CV</button></a>
+            
         </div>
     </div>
 </section>
@@ -118,8 +122,8 @@
 <section class="cta-section d-flex align-items-center text-center text-white" style="background-image: url('{{ asset('images/cta-bg.jpg') }}')">
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="fw-bold mb-4">Projects preview.</h2>
-        <a href="#" class="btn btn-dark rounded-0 px-4 py-1 fw-semibold">
-            Contact
+        <a href="{{ route('projects') }}" class="btn btn-dark rounded-0 px-4 py-1 fw-semibold">
+            View My Projects
         </a>
     </div>
 </section>

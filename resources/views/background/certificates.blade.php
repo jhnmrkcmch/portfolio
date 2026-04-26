@@ -68,7 +68,7 @@ style="background-image: url('{{ asset('images/cert-bg.jpg') }}');">
                     </a>
 
                     <a href="#" class="btn btn-outline-dark text-start cert-btn"
-                       data-img="{{ asset('images/lcc-admin-user.png') }}">
+                       data-img="{{ asset('images/javascript-certificate.png') }}">
                         JavaScript <span class="float-end">&rsaquo;</span>
                     </a>
 
