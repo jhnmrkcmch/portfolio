@@ -6,7 +6,7 @@
 
 @extends($layout)
 
-@section('title', 'Watch Live')
+@section('title', 'Certificates')
 
 @section('content')
 

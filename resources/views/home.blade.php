@@ -30,7 +30,7 @@
                     <hr />
                     <p class="mb-2 fs-5 text-light">Hello,</p>
                     <h1 class="fw-bold text-light responsive-title" style="font-size:64px;">
-                      I am John Mark.
+                      I am John Mark Camacho.
                     </h1>
                     <h3 class="mb-3 mb-lg-4 text-secondary" style="color:#acacac; font-weight:600;">
                       Web Developer
@@ -115,7 +115,7 @@
 </div> --}}
 
 <!-- CTA -->
-<section class="cta-section d-flex align-items-center text-center text-white">
+<section class="cta-section d-flex align-items-center text-center text-white" style="background-image: url('{{ asset('images/cta-bg.jpg') }}')">
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="fw-bold mb-4">Projects preview.</h2>
         <a href="#" class="btn btn-dark rounded-0 px-4 py-1 fw-semibold">

@@ -6,7 +6,7 @@
 
 @extends($layout)
 
-@section('title', 'School of Ministry')
+@section('title', 'Internships')
 
 @section('content')
 

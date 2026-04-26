@@ -158,8 +158,9 @@
     .visit-content hr {
         margin: 0 auto 2rem;
     }
-    .visit-image img {
-        display: none;
+    .image-wrapper img {
+        max-width: 100% !important;
+        height: auto !important ;
     }
     .custom-block-1 {
         text-align: center;
