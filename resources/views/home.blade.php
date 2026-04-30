@@ -73,7 +73,12 @@
             </p>
 
             <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom me-2 mb-2">Download CV</button></a>
-            <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom-2 mb-2 text-light">Contact</button></a>
+            <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom-2 mb-2 text-light" 
+                style="color: #f1f1f1;
+                border: 1px solid #f1f1f1;
+                background: transparent;">Contact
+                </button>
+            </a>
         </div>
     </div>
 </section>
