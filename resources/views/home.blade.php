@@ -72,7 +72,7 @@
                 From backend systems to dynamic websites, I focus on building clean, scalable, and user-friendly solutions.
             </p>
 
-            <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom mb-2">Download CV</button></a>
+            <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom me-2 mb-2">Download CV</button></a>
             <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom-2 mb-2 text-light">Contact</button></a>
         </div>
     </div>
