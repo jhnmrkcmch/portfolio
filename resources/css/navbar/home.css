@@ -47,7 +47,6 @@
     font-weight: 500;
 }
 
-
 .btn-custom,
 .btn-custom-2 {
     transition: all 0.2s ease;
@@ -73,10 +72,6 @@
     color: #f1f1f1;
     border: 1px solid #f1f1f1;
 }
-
-
-
-
 
 .service-icon {
     font-size: 30px;
