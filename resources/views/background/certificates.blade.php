@@ -57,16 +57,6 @@ style="background-image: url('{{ asset('images/cert-bg.jpg') }}');">
 
                 <div class="d-grid gap-3">
 
-                    <a href="#" class="btn btn-outline-dark text-start cert-btn active"
-                       data-img="{{ asset('images/lcc-admin-cards.png') }}">
-                        CMS <span class="float-end">&rsaquo;</span>
-                    </a>
-
-                    <a href="#" class="btn btn-outline-dark text-start cert-btn"
-                       data-img="{{ asset('images/projects-portfolio.png') }}">
-                        Responsive Websites <span class="float-end">&rsaquo;</span>
-                    </a>
-
                     <a href="#" class="btn btn-outline-dark text-start cert-btn"
                        data-img="{{ asset('images/javascript-certificate.png') }}">
                         JavaScript <span class="float-end">&rsaquo;</span>
@@ -75,11 +65,6 @@ style="background-image: url('{{ asset('images/cert-bg.jpg') }}');">
                     <a href="#" class="btn btn-outline-dark text-start cert-btn"
                        data-img="{{ asset('images/intern-prov10-cert.jpg') }}">
                         Internship <span class="float-end">&rsaquo;</span>
-                    </a>
-
-                    <a href="#" class="btn btn-outline-dark text-start cert-btn"
-                       data-img="{{ asset('images/projects-mobo.png') }}">
-                        Jquery <span class="float-end">&rsaquo;</span>
                     </a>
 
                 </div>

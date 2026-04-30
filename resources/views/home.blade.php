@@ -59,11 +59,11 @@
         <div class="visit-content">
             <hr />
 
-            <p class="mb-2 fs-5 text-light">Hello,</p>
-            <h1 class="fw-bold text-light responsive-title" style="font-size:64px;">
-                I am John Mark.
+            
+            <h1 class="fw-bold text-light responsive-title" style="font-size:64px; margin-bottom:-5px;">
+                John Mark Camacho
             </h1>
-
+            <p class="mb-2 fs-5 text-light">Full-Stack Web Developer</p>
             <p>
                   Specializing in Laravel-based systems, admin dashboards, and content management solutions.
             </p>
@@ -73,7 +73,7 @@
             </p>
 
             <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom me-2 mb-2">Download CV</button></a>
-            
+            <a href="{{ asset('johnmarkcamacho-resume.pdf') }}" download><button class="btn btn-custom-2 mb-2">Contact</button></a>
         </div>
     </div>
 </section>

@@ -1,0 +1,77 @@
+.ministry-section {
+    background: #1f1f1f;
+}
+
+.ministry-section h1 {
+    letter-spacing: 1px;
+}
+
+.ministry-section blockquote {
+    color: #ffffff;
+}
+
+.internship-section {
+    background: #f8f9fa;
+}
+
+/* Titles */
+.internship-subtitle {
+    color: #6c757d;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.internship-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* List */
+.internship-list {
+    padding-left: 18px;
+    line-height: 1.8;
+}
+
+/* Tech badges */
+.tech-badge {
+    background: #212529;
+    color: #fff;
+    margin: 3px;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+/* Highlight text */
+.highlight-text {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #0d6efd;
+}
+
+/* Card */
+.internship-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.internship-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo */
+.internship-logo {
+    max-width: 120px;
+}
+
+/* Divider */
+.divider {
+    width: 50px;
+    height: 3px;
+    background: #0d6efd;
+    margin: 10px auto;
+}

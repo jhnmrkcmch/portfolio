@@ -15,17 +15,15 @@
 @import './partials/sidebar.css';
 
 /* Navbar Pages */
-@import './navbar/education.css';
 @import './navbar/home.css';
+@import './navbar/project.css';
 
 /* About Pages */
 @import './about/about.css';
 
 /* Education */
-@import './education/littlewonders.css';
-@import './education/saltlight.css';
-@import './education/schoolofministry.css';
-
+@import './education/education.css';
+@import './education/internships.css';
 
 /* Auth */
 @import './auth/login.css';

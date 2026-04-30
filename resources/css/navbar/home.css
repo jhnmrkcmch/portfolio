@@ -46,20 +46,38 @@
     color: #555 !important;
     font-weight: 500;
 }
-.btn-custom {
+
+
+.btn-custom,
+.btn-custom-2 {
+    transition: all 0.2s ease;
     border-radius: 30px;
     padding: 10px 25px;
 }
-.me-2 {
-    background: #f1f1f1;
+.btn-custom {
+    background: #c5c5c5;
+    color: #111;
 }
+
 .btn-custom:hover {
+    background: #ffffff; 
+    color: #1f1f1f;
+}
+.btn-custom-2 {
     color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    background: transparent;
 }
-.me-2:hover {
-    background: #1f1f1f;
-    border: 1px solid #fff;
+.btn-custom-2:hover {
+    background: rgba(241, 241, 241, 0.1);
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
 }
+
+
+
+
+
 .service-icon {
     font-size: 30px;
     color: #727272;
@@ -207,16 +225,6 @@
         padding: 25px !important;
     }
 }
-/* .cta-section {
-    min-height: 70vh;
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url('../../public/images/cta-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* 👈 this makes it scroll */
-/* }  */
-
 .cta-section {
     position: relative;
     min-height: 50vh;
@@ -226,8 +234,6 @@
     background-size: cover;
     background-position: center center;
 }
-
-
 .community-section {
     background-color: #1f1f1f;
 }

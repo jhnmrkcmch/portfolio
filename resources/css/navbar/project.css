@@ -1,0 +1,21 @@
+/* Darken the modal backdrop slightly more if desired */
+.modal-backdrop.show {
+    opacity: 0.85;
+}
+
+/* Ensure the project images fit well */
+.project-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-img:hover {
+    transform: scale(1.03);
+}
+
+.tech-badge {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+    font-weight: 500;
+}

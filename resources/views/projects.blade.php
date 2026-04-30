@@ -80,8 +80,15 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
                         </div>
 
                         <div class="d-flex gap-2">
-                            <a href="https://github.com/arnoldsubastil/lighthouseWebsite/tree/testing-branch" class="btn btn-sm btn-dark w-50">GitHub</a>
-                            <a href="#" class="btn btn-sm btn-outline-dark w-50">Live Demo</a>
+                            <a href="https://github.com/..." class="btn btn-sm btn-dark w-50">GitHub</a>
+                            <button 
+                                class="btn btn-sm btn-outline-dark w-50 preview-trigger" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#projectPreviewModal"
+                                data-title="Lighthouse Christian Community Admin Preview"
+                                data-images="{{ asset('images/lcc-admin-cards.png') }},{{ asset('images/lcc-admin-carousel.png') }},{{ asset('images/lcc-admin-user.png') }}">
+                                Preview
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -119,4 +126,55 @@ style="background-image: url('{{ asset('images/projects-bg.png') }}');">
     </div>
 </section>
 
+<div class="modal fade" id="projectPreviewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold" id="modalProjectTitle">Project Preview</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carouselItems">
+                        <!-- Images will be injected here by JS -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const previewModal = document.getElementById('projectPreviewModal');
+    
+    previewModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget; // Button that triggered the modal
+        const title = button.getAttribute('data-title');
+        const images = button.getAttribute('data-images').split(',');
+
+        // Update Title
+        document.getElementById('modalProjectTitle').textContent = title;
+
+        // Build Carousel Items
+        const carouselInner = document.getElementById('carouselItems');
+        carouselInner.innerHTML = ''; // Clear previous images
+
+        images.forEach((imgSrc, index) => {
+            const activeClass = index === 0 ? 'active' : '';
+            carouselInner.innerHTML += `
+                <div class="carousel-item ${activeClass}">
+                    <img src="${imgSrc.trim()}" class="d-block w-100" style="object-fit: contain; max-height: 80vh;" alt="Preview">
+                </div>
+            `;
+        });
+    });
+});
+</script>
 @endsection
