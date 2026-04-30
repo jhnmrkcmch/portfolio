@@ -65,7 +65,7 @@
             </h1>
             <p class="mb-2 fs-5 text-light">Full-Stack Web Developer</p>
             <p>
-                  Specializing in Laravel-based systems, admin dashboards, and content management solutions.
+                Specializing in Laravel-based systems, admin dashboards, and content management solutions.
             </p>
 
             <p>
